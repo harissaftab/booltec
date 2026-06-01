@@ -23,7 +23,7 @@ const TrustedBy = () => {
       whileInView="visible"
       transition={{ staggerChildren: 0.1}}
       viewport={{once: true}}
-      className="flex items-center justify-center gap-10 m-4 flex-nowrap overflow-x-auto">
+      className="flex items-center justify-center gap-16 m-4 flex-wrap">
         {company_logos.map((logo, index)=>(
             <motion.img
             variants={{
@@ -31,7 +31,7 @@ const TrustedBy = () => {
               visible: {opacity: 1, y: 0},
             }}
             transition={{duration: 0.4}}
-            key={index} src={logo.src} alt={logo.alt} className='max-h-5 sm:max-h-6 dark:drop-shadow-xl'/>
+            key={index} src={logo.src} alt={logo.alt} className='max-h-10 sm:max-h-12 dark:drop-shadow-xl'/>
         ))}
       </motion.div>
     </motion.div>
