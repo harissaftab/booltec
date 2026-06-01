@@ -1,3 +1,7 @@
+import redhat_logo from './redhat_logo.svg'
+import telekom_logo from './telekom_logo.png'
+import training360_logo from './360training_logo.svg'
+import knowledgecity_logo from './knowledgecity_logo.svg'
 import logo from './logo.svg'
 import arrow_icon from './arrow_icon.svg'
 import group_profile from './group_profile.png'
@@ -32,12 +36,10 @@ import moon_icon from './moon_icon.svg'
 
 
 export const company_logos = [
-  microsoft_logo,
-  zoom_logo,
-  rakuten_logo,
-  coinbase_logo,
-  airbnb_logo,
-  google_logo,
+  { src: redhat_logo, alt: 'Red Hat' },
+  { src: telekom_logo, alt: 'Deutsche Telekom' },
+  { src: training360_logo, alt: '360training' },
+  { src: knowledgecity_logo, alt: 'KnowledgeCity' },
 ]
 
 const assets = {
